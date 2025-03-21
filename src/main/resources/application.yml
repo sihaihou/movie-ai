@@ -1,0 +1,16 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-ai
+  ai:
+    openai:
+      api-key: sk-xxx
+      base-url: https://api.mixrai.com
+      chat: ##聊天模型
+        options:
+          model: gpt-4o
+logging:
+  level:
+    spring.ai: debug
+    com.reyco.order.ai: debug
